@@ -6,17 +6,6 @@
     --cor-secundaria: #beecee;
 }
 
-#navbar {
-    overflow: hidden;
-    z-index: 1;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 /* Animação */
 
 [data-anime] {
@@ -46,7 +35,7 @@
 }
 
 .home {
-    background-image: url(./img/background-home.jpg);
+    background-image: url(../img/background-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -107,11 +96,10 @@
 
 .card:hover {
     transform: translateY(-7px);
-    box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.829);
-    border: 1px solid rgba(109, 109, 109, 0.884);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.829);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
 
     .img-fluid {
         width: 20rem;

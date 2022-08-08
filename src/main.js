@@ -8,19 +8,6 @@ navLink.forEach((item) => {
             : navCollapse.classList.remove('show')
     })
 })
-// tornando a navbar sticky
-window.onscroll = function () { stickyFunction() };
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stickyFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
 
 // animando todos os items que possuirem o atributo "data-anime"
 // criando array de items
