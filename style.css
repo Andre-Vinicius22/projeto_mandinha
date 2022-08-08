@@ -6,6 +6,17 @@
     --cor-secundaria: #beecee;
 }
 
+#navbar {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /* Animação */
 
 [data-anime] {
