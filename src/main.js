@@ -1,3 +1,4 @@
+// recolhendo navbar no mobile
 var navCollapse = document.querySelector('.navbar-collapse')
 var navLink = document.querySelectorAll('.nav-link')
 
@@ -6,6 +7,19 @@ navLink.forEach((item) => {
         navCollapse.classList.contains('.collapse')
             ? navCollapse.classList.add('show')
             : navCollapse.classList.remove('show')
+    })
+})
+
+// troca a class active dos elementos html
+navLink.forEach((element) => {
+    element.addEventListener('click', () => {
+        // limpando active de todos os elementos assim que entra no eventListener
+        navLink.forEach((e) => {
+            e.classList.remove('active')
+        })
+        if (!element.classList.contains('active')) {
+            element.classList.add('active')
+        }
     })
 })
 

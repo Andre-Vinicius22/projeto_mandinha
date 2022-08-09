@@ -3,7 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
     --cor-primaria: rgb(68, 68, 68);
-    --cor-secundaria: #beecee;
+    --cor-secundaria: #d1eef9;
 }
 
 /* Animação */
@@ -32,6 +32,10 @@
 [data-anime].animate {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+
+nav {
+    background-color: #e2439a;
 }
 
 .home {
@@ -96,7 +100,7 @@
 
 .card:hover {
     transform: translateY(-7px);
-    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.829);
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.658);
 }
 
 @media (max-width: 500px) {
