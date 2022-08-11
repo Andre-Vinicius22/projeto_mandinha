@@ -54,7 +54,7 @@ nav {
 
 .sobre {
     width: 100%;
-    background-color: var(--cor-secundaria);
+    background-image: -webkit-linear-gradient(110deg, var(--background), var(--cor-secundaria));
     display: flex;
     justify-content: center;
 }
@@ -129,6 +129,9 @@ svg {
 }
 
 @media (max-width: 500px) {
+    .sobre {
+        background-image: -webkit-linear-gradient(-90deg, var(--background), var(--cor-secundaria));
+    }
 
     .img-fluid {
         width: 13rem;
