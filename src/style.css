@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    --cor-primaria: rgb(68, 68, 68);
+    --cor-primaria: rgba(20, 20, 20, 0.815);
     --cor-secundaria: #d1eef9;
+    --background: #e2439a;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Animação */
@@ -35,7 +39,7 @@
 }
 
 nav {
-    background-color: #e2439a;
+    background-color: var(--background);
 }
 
 .home {
@@ -50,23 +54,29 @@ nav {
 
 .sobre {
     width: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+svg {
+    flex-direction: row-reverse;
+    transform: rotate(-180);
 }
 
 #profile-picture {
-    background-color: var(--cor-primaria);
+    background-image: -webkit-linear-gradient(245deg, var(--background), var(--cor-secundaria));
     border-radius: 2%;
 }
 
 .formacao {
     width: 100%;
-    background-color: var(--cor-secundaria);
+    background-image: -webkit-linear-gradient(245deg, var(--background), var(--cor-secundaria));
     color: var(--cor-primaria);
 }
 
 .formacao .cv-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid var(--cor-primaria);
+    border-left: 2px solid var(--cor-secundaria);
     position: relative;
 }
 
@@ -78,7 +88,7 @@ nav {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid var(--cor-primaria);
+    border: 2px solid rgb(192, 38, 184);
     background: #fff;
 }
 
@@ -86,6 +96,7 @@ nav {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-image: -webkit-linear-gradient(130deg, var(--background), var(--cor-secundaria));
 }
 
 .cards {
@@ -96,11 +107,21 @@ nav {
 
 .card {
     transition: all 0.2s ease-in-out;
+    border-radius: 20px;
+}
+
+.btn-gradient {
+    background-image: -webkit-linear-gradient(245deg, var(--background), var(--cor-secundaria));
+    border: none;
+}
+
+.btn-gradient:hover {
+    box-shadow: 0 0 0.8rem var(--background);
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.658);
+    transform: translateY(-5px);
+    box-shadow: 0 0 0.8rem var(--background);
 }
 
 @media (max-width: 500px) {
@@ -113,10 +134,27 @@ nav {
         margin-top: 2rem;
     }
 
+    .formacao {
+        width: 100%;
+        background-image: -webkit-linear-gradient(100deg, var(--background), var(--cor-secundaria));
+        color: var(--cor-primaria);
+    }
+
     .cv-title {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
+    .Conteudos {
+        background-image: -webkit-linear-gradient(245deg, var(--background), var(--cor-secundaria));
+    }
+
+    .Conteudos h2,
+    h3 {
+        color: #fff;
+        text-shadow: 1px 1px 1px var(--background);
+    }
+
 
     .cards {
         display: flex;
