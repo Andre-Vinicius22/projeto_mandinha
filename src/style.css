@@ -131,7 +131,8 @@ svg {
 @media (max-width: 500px) {
 
     .img-fluid {
-        width: 20rem;
+        width: 13rem;
+        margin-left: 4rem;
     }
 
     #profile-picture {
